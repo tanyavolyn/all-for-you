@@ -1,38 +1,267 @@
-.App {
-  text-align: center;
+ body{
+    background: #eeeef1;
+ }
+
+ .container{
+    display: flex;
+ }
+
+ h1{ 
+    font-family: 'Michroma', sans-serif;
+    text-transform: uppercase;
+    color:black;
+    font-size: 28pt;
+    margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1100px;
+    margin-left: 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.link{
+display: flex;
+justify-content: center;
+align-items: center;
+ background-color: white;
+text-transform: uppercase;
+text-decoration: none;
+color: #252525;
+font-family: 'Montserrat', sans-serif;
+font-size: 14pt;
+width: 115px;
+height: 35px;
+}
+
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.781);  
+}
+.galerycontainer{
+    display: flex;
+
+    align-items: center;
+}
+.galbild{
+    width: 100%;
+}
+  
+
+.btncontainer{
+    display: flex;
+    justify-content: space-between;
+width: 100%;
+
+    position: absolute;
+
+}
+
+.btngal{
+font-family: 'Montserrat', sans-serif;
+font-size: 14pt;
+color: #7c7c7c;
+border: none;
+height: 50px;
+border-radius: 5px;
+}
+
+.btngal:hover{
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+  @keyframes slowmotion {
+      from { opacity:0}
+      to { opacity:1 }
   }
+
+
+.btngalshop{
+font-family: 'Montserrat', sans-serif;
+font-size: 18pt;
+color: #363636;
+border: white solid 2px;
+border-radius: 5px;
+width: 250px;
+height: 75px;
+background-color: #ddddddb7;
+animation: slowmotion 3s;
+opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.btngalshop:hover{
+    background-color: rgba(255, 0, 0, 0.781);
+    color: white
+}
+
+.free{
+    background-color: rgba(255, 0, 0, 0.781);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.btnshop{
+    color: #252525;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    width: 115px;
+    height: 35px;
+    border: none;
+   margin-top: 15px;
+   margin-bottom: 15px;    
+}
+
+.btnshop:hover{
+    background-color: rgba(255, 255, 255, 0.781);
+    cursor: grab;
+}
+
+.btnshopcontainer{
+    display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    padding-top: 10px;
+}
+.clothescontainer{
+    display: flex;
+    flex-direction: column;
+padding: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+ 
+}
+.clothesname{
+    font-weight: 300;
+}
+.clothesrow{
+    display: flex;
+justify-content: center;
+    flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.containerabout{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.abouttext{
+    width: 700px;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.abouttitel{
+margin: 0;
+font-size: 28pt;
+
+}
+.textabout{
+    font-size: 14pt;
+
+}
+.aboutbild{
+    width: 900px;
+    height: 500px;
+    margin-top: 70px;
+
+}
+.btnabout{
+    font-size: 14pt;
+    background: none;
+ border: none;
+ cursor: grab;
+ color: rgba(255, 0, 0, 0.644);
+
+
+}
+.contactcontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.contactcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+}
+.textcontact{
+    
+ margin: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formline{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+padding: 5px;
+   
+}
+input{
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2px;
+border: ;
+}
+textarea{
+    height: 150px;
+}
+
+.btncontactcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+.btncontact{
+
+    background-color: rgba(255, 0, 0, 0.692);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    padding: 5px 15px 5px 15px;
+
+}
+.allfor{
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400; 
+    color: red;
+    font-weight: 600;
+}
+.contactlink{
+
+    background: none;
+    border: none;
+ }
+
+.contactlink:hover{
+ background-color: white;
+ cursor: grab;
+}
+.box{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+}
+
+.containerfooter{
+background-color:     rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+align-items: center;
+    border-top: #252525 solid 1px;
+
+    
 }
