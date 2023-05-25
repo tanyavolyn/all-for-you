@@ -167,6 +167,7 @@ font-size: 28pt;
 }
 .textabout{
     font-size: 14pt;
+    white-space: pre-line;
 
 }
 .aboutbild{
