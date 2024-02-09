@@ -14,6 +14,7 @@
     color:black;
     font-size: 28pt;
     margin-left: 20px;
+    width: 350px;
 }
 
 
@@ -154,6 +155,7 @@ justify-content: center;
     display: flex;
     flex-direction: row;
     margin: 20px;
+    flex-wrap: wrap;
 }
 .abouttext{
     width: 700px;
@@ -185,6 +187,10 @@ font-size: 28pt;
 
 
 }
+
+form{
+    margin-top: 80px;
+}
 .contactcontainer{
     display: flex;
     flex-direction: row;
@@ -197,6 +203,7 @@ font-size: 28pt;
     justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     font-size: 14pt;
+    flex-wrap: wrap;
 }
 .textcontact{
     
@@ -214,16 +221,16 @@ input{
     font-size: 14pt;
     font-family: 'Montserrat', sans-serif;
     padding: 2px;
-border: ;
+
 }
 textarea{
-    height: 150px;
+    height: 190px;
 }
 
 .btncontactcontainer{
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 50px;
 
 }
 .btncontact{
@@ -233,9 +240,18 @@ textarea{
     font-family: 'Montserrat', sans-serif;
     color: white;
     border: none;
-    padding: 5px 15px 5px 15px;
+    padding: 15px 25px 15px 25px;
 
 }
+.btncontact:hover{
+
+    background-color: rgba(255, 255, 255, 0.781);
+    cursor: grab;
+    color: #252525;
+text-shadow: 0 1px 2px gray;
+
+}
+
 .allfor{
     font-family: 'Michroma', sans-serif;
     font-weight: 400; 
@@ -269,4 +285,118 @@ align-items: center;
     border-top: #252525 solid 1px;
 
     
+}
+
+@media all and (max-width: 900px){
+
+    .container {
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    width: 800px;
+    margin: 10px;
+}
+.clothesimg{
+    width: 300px;
+}
+.containerabout{
+    display:flex;
+    flex-direction:column;
+}
+.aboutbild{
+    width:100%;
+    height: 100%;
+}
+.abouttitel{
+    margin-top: 20px;
+}
+.contactcontainer{
+    display:flex;
+
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+form{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.map{
+    margin-bottom: 30px;
+}
+}
+
+@media all and (max-width: 500px){
+h1{
+    font-size: 22pt;
+}
+nav{
+    width: 400px;
+}
+a.link{
+    
+    font-size: 10pt;
+    width: 80px;
+    margin: 0;
+}
+.btngalshop{
+    width: 120px;
+    height: 45px;
+    font-size: 16pt;
+}
+.footicon{
+    width: 45px;
+    height: 45px;
+}
+
+.clothesimg{
+    width: 250px;
+}
+.btnshopcontainer{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+
+}
+.btnshop{
+    background-color: #dddddd38;
+    display: flex;
+    justify-content: flex-start;
+    width: 80px;
+}
+.aboutbild{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.abouttitel{
+    font-size: 23px;
+}
+.abouttext{
+    font-size: 10pt;
+    width: 380px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.textabout{
+    font-size: 12pt;
+}
+h2{
+    font-size: 18pt;
+}
+.contactcontainer{
+    width: 100%;
+    margin: 0;
+}
+.formcontainer{
+    width: 400px;
+}
+.formline{
+    width: 380px;
+}
+.map{
+    width: 380px;
+}
 }

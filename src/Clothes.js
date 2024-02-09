@@ -6,10 +6,10 @@ function Clothes ({itemsForSale}){
                 return(
 
                     <div className="clothescontainer" key={id}>
-                        <img src={image} alt="Bild" width="400px"/>
+                        <img className="clothesimg" src={image} alt="Bild" width="400px"/>
                         <div>
                             <h3 className="clothesname">{name}</h3>
-                            <h3>€{price}</h3>
+                            <h3 className="clothesprice">€{price}</h3>
                         </div>
 
                     </div>
